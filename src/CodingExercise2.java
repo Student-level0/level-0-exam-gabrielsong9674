@@ -13,6 +13,8 @@ public class CodingExercise2 {
 public static void main(String[] args) {
 	String response = JOptionPane.showInputDialog("How old are you?");
 	int age = Integer.parseInt(response);
+	int year = 2018 - age;
+	JOptionPane.showMessageDialog(null, "You were born in "+ year+ ".");
 	if(age > 30) {
 		JOptionPane.showMessageDialog(null, "You are too old to play this game.");
 	}
